@@ -12,17 +12,17 @@ Java
 1. Adicione a dependência ao seu pom.xml:
  ```bash
 <dependency>
-		  <groupId>org.seleniumhq.selenium</groupId>
-		  <artifactId>selenium-java</artifactId>
-		  <version>4.10.0</version>
-	  </dependency>
-	  <!-- https://mvnrepository.com/artifact/junit/junit -->
+   <groupId>org.seleniumhq.selenium</groupId>
+   <artifactId>selenium-java</artifactId>
+   <version>4.10.0</version>
+</dependency>
+   <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
  ```
 3. Crie uma instância do Browser em seu método de teste:
 ```bash
    WebDriver driver = new FirefoxDriver();
-		driver.get("https://automationexercise.com/");
+   driver.get("https://automationexercise.com/");
 ```
 5. Use os métodos do navegador diretamente para ações gerais, como navegação, redimensionamento de janela, rolagem e tratamento de alertas:
    ```bash
