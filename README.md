@@ -10,7 +10,7 @@ Java
 
 # Realizando configuração
 1. Adicione a dependência ao seu pom.xml:
- ```bash
+```bash
 <dependency>
    <groupId>org.seleniumhq.selenium</groupId>
    <artifactId>selenium-java</artifactId>
@@ -18,12 +18,12 @@ Java
 </dependency>
    <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
- ```
+   ```
 3. Crie uma instância do Browser em seu método de teste:
-```bash
+   ```bash
    WebDriver driver = new FirefoxDriver();
    driver.get("https://automationexercise.com/");
-```
+   ```
 5. Use os métodos do navegador diretamente para ações gerais, como navegação, redimensionamento de janela, rolagem e tratamento de alertas:
    ```bash
    browser.maximize();
