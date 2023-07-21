@@ -10,8 +10,33 @@ Java
 
 # Realizando configuração
 1. Adicione a dependência ao seu pom.xml:
+ ```bash
+<dependency>
+		  <groupId>org.seleniumhq.selenium</groupId>
+		  <artifactId>selenium-java</artifactId>
+		  <version>4.10.0</version>
+	  </dependency>
+	  <!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+ ```
 3. Crie uma instância do Browser em seu método de teste:
-4. Use os métodos do navegador diretamente para ações gerais, como navegação, redimensionamento de janela, rolagem e tratamento de alertas:
-5. Use os métodos da classe ElementFactory para obter uma instância de cada elemento.
-6. Sair do navegado no final do projeto
-   
+```bash
+   WebDriver driver = new FirefoxDriver();
+		driver.get("https://automationexercise.com/");
+```
+5. Use os métodos do navegador diretamente para ações gerais, como navegação, redimensionamento de janela, rolagem e tratamento de alertas:
+   ```bash
+   browser.maximize();
+   browser.goTo("https://automationexercise.com/");
+   browser.waitForPageToLoad();
+   ```
+7. Chame os métodos do elemento para executar uma ação com o elemento:
+   ```bash
+   txbSearch.type("Selenium WebDriver");
+   txbSearch.submit();
+   browser.waitForPageToLoad();
+   ```
+9. Sair do navegado no final do projeto:
+   ```bash
+   browser.quit();
+```
