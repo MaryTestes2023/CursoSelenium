@@ -8,6 +8,13 @@ Selenium
 
 Java
 
+Junit
+
+# O que se refere este projeto?
+É um projeto simples de compra de produtos em um site de testes.
+Não tem Padrão Page Object, ou seja instanciar uma classe com todos os parametros que se repetem no projeto.
+Não tem Tags funcionais (@Before, @After), apenas a tag do Junit para os testes ou seja @Test.
+
 # Realizando configuração
 1. Adicione a dependência ao seu pom.xml:
 ```bash
